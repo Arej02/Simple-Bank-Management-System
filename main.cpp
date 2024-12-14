@@ -4,8 +4,16 @@ int main(){
     int pin=1234;
     int amount;
     int choice;
-    cout<<"Enter the pin number:";
+    int count=4;
+while(count!=0){
+    cout<<"\nEnter the pin number:";
     cin>>pin;
+    count--;
+    cout<<"\nThis is a wrong pin number.You have "<<count<<" attempt left";
+}
+if(count==0){
+    cout<<"\nYour account is locked for 24 hours.If urgent you can contact the bank office";
+}   
 if(pin==1234){
     Bank Account1;
     cout<<"\n------------------BANK APPLICATION--------------------";
